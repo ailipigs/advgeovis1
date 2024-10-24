@@ -1,0 +1,23 @@
+---
+title: "lab1"
+author: "AiLi Pigott"
+date: "2024-10-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Load the necessary packages
+```{r}
+library(ggplot2)
+library(sf)
+library(tidyverse)
+```
+#Read in the spatial data
+```{r}
+boulder <- st_read("C:/Users/apigott/Desktop/EAS 548 Geovisualization/advgeovis1/BoulderSocialMedia/BoulderSocialMedia.shp")
+boulder
+```
+
